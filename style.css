@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #fff;
+    line-height: 1.6;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* 背景图片样式（关键） */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('kali.jpg'); /* 背景图文件名 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.6; /* 背景透明度 */
+    z-index: -1;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: rgba(30, 30, 50, 0.6);
+    border-radius: 12px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px);
+}
+
+header h1 {
+    color: #7ee8fa; /* 亮青色标题，适配 ghost 风格 */
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+header p {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+main {
+    background-color: rgba(15, 15, 30, 0.7);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 30px;
+    backdrop-filter: blur(5px);
+}
+
+h2 {
+    color: #ffb7c5; /* 粉色副标题 */
+    margin-bottom: 15px;
+    border-bottom: 2px solid rgba(255, 183, 197, 0.3);
+    padding-bottom: 8px;
+}
+
+/* 头像样式 */
+.avatar-container {
+    margin: 20px 0;
+    text-align: center;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #7ee8fa;
+    object-fit: cover;
+}
+
+#clickBtn {
+    background-color: #7ee8fa;
+    color: #121212;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 15px 0;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+#clickBtn:hover {
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+#message {
+    color: #ffb7c5;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.links ul {
+    list-style: none;
+}
+
+.links li {
+    margin: 10px 0;
+}
+
+.links a {
+    color: #7ee8fa;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #ffb7c5;
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 14px;
+    padding: 20px;
+    background-color: rgba(30, 30, 50, 0.6);
+    border-radius: 8px;
+}
